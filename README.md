@@ -5,16 +5,16 @@ python version: 3.10
 requirements: matplotlib, numpy, torch, collections, pickle, tqdm, struct, hashlib, datasets, sklearn, seaborn, transformers
 
 ## 2.Document Description
-- aggregate.py: use different method(average/elited) to aggregrate models after training finished
-- calculate.py: calculate various parameters in model training
-- client_v7.py and server_v7.py: main training code
-- client_v7_single.py: train model only on client(speed up, skip communication with server), for getting result faster
-- config.py: all seetings about training
-- connect.py: communication for client and server, CSE encryption
-- dataset.py: load and preprocess dataset
-- evaluate.py: evaluate final model on test dataset
-- original_bert_train.py: train model with no federated method
-- split_model.py: model split method
+- **aggregate.py**: use different method(average/elited) to aggregrate models after training finished
+- **calculate.py**: calculate various parameters in model training
+- **client_v7.py**: and server_v7.py: main training code
+- **client_v7_single.py**: train model only on client(speed up, skip communication with server), for getting result faster
+- **config.py**: all seetings about training
+- **connect.py**: communication for client and server, CSE encryption
+- **dataset.py**: load and preprocess dataset
+- **evaluate.py**: evaluate final model on test dataset
+- **original_bert_train.py**: train model with no federated method
+- **split_model.py**: model split method
 
 ## 3.Running Commend
 
@@ -25,9 +25,9 @@ cd DSA4213-finalproject/v5(ESE)
 ```
 
 ### 3.2 set training parameters on config.py
-- set model/dataset path
-- write the right ip/port of client/server 
-- set split layer and last layer of model
+- set model/dataset **path**
+- write the right **ip/port** of client/server 
+- set **split layer** of model
 - set learning rate, batch size, epoch num, aggregate round, elite aggregate weight, client num
 
 ### 3.3 start training
@@ -58,3 +58,4 @@ set chosed modelpart0, modelpart1 and modelpart2 path for different training met
 python evaluate.py
 
 ```
+
