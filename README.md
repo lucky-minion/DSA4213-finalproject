@@ -2,7 +2,7 @@
 ## 1.Python Environment
 python version: 3.10
 
-requirements:matplotlib, numpy, torch, collections, pickle, tqdm, struct, hashlib, datasets, sklearn, seaborn, transformers
+requirements: matplotlib, numpy, torch, collections, pickle, tqdm, struct, hashlib, datasets, sklearn, seaborn, transformers
 
 ## 2.Document Description
 - aggregate.py: use different method(average/elited) to aggregrate models after training finished
@@ -56,4 +56,5 @@ python original_bert_train.py
 set chosed modelpart0, modelpart1 and modelpart2 path for different training methods. then run the commend repeatedly:
 ```
 python evaluate.py
+
 ```
